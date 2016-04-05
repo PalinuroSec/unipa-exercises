@@ -18,7 +18,13 @@ int main()
   return 0;
 }
 
+
+
 // take inputs
+// it was suggested by our professor
+// as a quick alternative to
+// malloc + files handling + shell parameters etc
+
 int loadvect(float v[], int dim)
 {
   int i;
