@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define N 10
 
 // prototypes
 float minf(int dim, float *series);
@@ -9,11 +10,11 @@ int loadvect(float vect[], int dim);
 // det main
 int main()
 {
-  float vect[100], minv, maxv, avgv;
-  loadvect(vect, 10);
-  minv = minf(10, vect);
-  maxv = maxf(10, vect);
-  avgv = avgf(10, vect);
+  float vect[N], minv, maxv, avgv;
+  loadvect(N, vect);
+  minv = minf(N, vect);
+  maxv = maxf(N, vect);
+  avgv = avgf(N, vect);
   printf("min: %f\nmax: %f\navg: %f\n", minv, maxv, avgv);
   return 0;
 }
@@ -24,8 +25,7 @@ int main()
 // it was suggested by our professor
 // as a quick alternative to
 // malloc + files handling + shell parameters etc
-
-int loadvect(float v[], int dim)
+int loadvect(int dim, float v[])
 {
   int i;
   int check;
