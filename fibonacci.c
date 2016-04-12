@@ -1,5 +1,5 @@
 /*
- * 
+1;2802;0c * 
  * Copyright 2016 Lorenzo "Palinuro" Faletra  <palinuro@frozenbox.org>
  * 
  * This program is free software; you can redistribute it and/or modify
@@ -22,24 +22,28 @@
 
 #include <stdio.h>
 
-long fibonacci(long);
+unsigned long int fibonacci(unsigned long int);
 
 int main()
 {
   int n;
   printf("digita un numero: ");
-  scanf("d", &n);
-  printf("il numero di fibonacci in posizione %d e' %ld\n", n fibonacci(n));
+  scanf("%d", &n);
+  printf("il numero di fibonacci in posizione %d e' %ld\n", n, fibonacci(n));
 
   return 0;
 }
 
-long int fibonacci(long int pos)
+unsigned long int fibonacci(unsigned long int pos)
 {
-  if(i==0)
-    return 0;
-  else if(i==1)
-    return 1;
+  if(pos==0)
+    {
+      return 0;
+    }
+  else if(pos==1)
+    {
+      return 1;
+    }
   else
-    return fibonacci(i-1) + fibonacci(i-2);
+    return fibonacci(pos-1)+fibonacci(pos-2);
 }
