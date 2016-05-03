@@ -15,7 +15,7 @@ float* genmat(short int rows, short int cols)
         mat[col] = (float*) calloc(rows * sizeof(float));
     }
 
-    return &mat;
+    return mat;
 }
 
 
