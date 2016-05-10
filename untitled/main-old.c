@@ -1,3 +1,5 @@
+//i don't have time to finish this shit
+
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
