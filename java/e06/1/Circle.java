@@ -1,12 +1,12 @@
 public class Circle extends Shape {
   private double radius;
 
-  protected void setRadius(double radius)
+  public void setRadius(double radius)
   {
     this.radius = radius;
   }
 
-  protected double getRadius()
+  public double getRadius()
   {
     return this.radius;
   }

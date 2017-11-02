@@ -2,22 +2,22 @@ public class Shape {
   private String color;
   private boolean filled;
 
-  protected void setColor(String color)
+  public void setColor(String color)
   {
     this.color = color;
   }
 
-  protected void setFilled(boolean filled)
+  public void setFilled(boolean filled)
   {
     this.filled = filled;
   }
 
-  protected String getColor()
+  public String getColor()
   {
     return this.color;
   }
 
-  protected boolean getFilled()
+  public boolean getFilled()
   {
     return this.filled;
   }

@@ -1,14 +1,14 @@
 public class Square extends Rectangle {
   private double side;
 
-  protected void setSide(double side)
+  public void setSide(double side)
   {
     this.setWidth(side);
     this.setHeight(side);
     this.side = side;
   }
 
-  protected double getSide()
+  public double getSide()
   {
     return this.side;
   }
